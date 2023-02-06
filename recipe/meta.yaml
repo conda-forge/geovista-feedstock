@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.8,<3.11
     - pip
     - setuptools >=45
     - setuptools-scm >=7
   run:
+    - python >=3.8,<3.11
     - cmocean
     - colorcet
-    - python >=3.8
     - cartopy >=0.20
     - click
     - click-default-group
