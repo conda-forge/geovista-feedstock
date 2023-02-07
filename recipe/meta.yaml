@@ -1,5 +1,5 @@
 {% set name = "geovista" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 93492cd5607b9e45e2de1ea7f6ad22d29c91ef850e5ace165633a6eef24c08bb
+  sha256: c468512ffab6dd31b404d7e52ab72265832f735bd415f1ecbf035fa12c3e84fd
 
 build:
   number: 0
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<3.11
+    - python >=3.8
     - pip
     - setuptools >=45
     - setuptools-scm >=7
   run:
-    - python >=3.8,<3.11
+    - python >=3.8
     - cmocean
     - colorcet
     - cartopy >=0.20
