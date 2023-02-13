@@ -1,5 +1,5 @@
 {% set name = "geovista" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c468512ffab6dd31b404d7e52ab72265832f735bd415f1ecbf035fa12c3e84fd
+  sha256: 095e42f402f88486f138587a2df136e085988d29f1b45d5302328e9b0075c0ac
 
 build:
   number: 0
@@ -30,8 +30,7 @@ requirements:
     - netcdf4
     - pooch
     - pyproj >=3.3
-    - pyvista =0.37.0
-    - pyvistaqt
+    - pyvista >=0.38
     - vtk =9.2.2
 
 test:
