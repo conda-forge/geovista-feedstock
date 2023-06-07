@@ -1,5 +1,5 @@
 {% set name = "geovista" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ce2154fadece5a2b4c847aa335e2b4ff754a255743b222301a820423c238efa
+  sha256: 74391057e882f9dd2684ff623cdbfdb60d2b4978c0d6b1040943415fb3cf1d48
 
 build:
   number: 0
@@ -16,22 +16,24 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - setuptools >=61
     - setuptools-scm >=7
   run:
-    - python >=3.8
-    - cmocean
-    - colorcet
+    - python >=3.9
     - cartopy >=0.20
     - click
     - click-default-group
+    - cmocean
+    - colorcet
     - netcdf4
+    - numpy >=1.21
+    - platformdirs
     - pooch
     - pyproj >=3.3
     - pyvista >=0.38
-    - vtk =9.2.2
+    - vtk >=9.2.6
 
 test:
   imports:
