@@ -10,9 +10,11 @@ source:
   sha256: 74391057e882f9dd2684ff623cdbfdb60d2b4978c0d6b1040943415fb3cf1d48
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
+    - geovista = geovista.cli:main
 
 requirements:
   host:
@@ -38,14 +40,16 @@ requirements:
 test:
   imports:
     - geovista 
+  commands:
+    - geovista --help
 
 about:
   home: https://github.com/bjlittle/geovista
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Cartographic rendering and mesh analytics powered by PyVista
-  description: Cartographic rendering and mesh analytics powered by PyVista
+  summary: Cartographic rendering and mesh analytics powered by PyVista.
+  dev_url: https://github.com/bjlittle/geovista
   
 extra:
   recipe-maintainers:
