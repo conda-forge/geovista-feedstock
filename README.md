@@ -1,15 +1,15 @@
-About geovista
-==============
+About geovista-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geovista-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bjlittle/geovista
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geovista-feedstock/blob/main/LICENSE.txt)
+Summary: Cartographic rendering and mesh analytics powered by PyVista.
 
-Summary: Cartographic rendering and mesh analytics powered by PyVista
-
-Cartographic rendering and mesh analytics powered by PyVista
+Development: https://github.com/bjlittle/geovista
 
 Current build status
 ====================
