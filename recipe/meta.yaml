@@ -41,7 +41,10 @@ test:
   imports:
     - geovista 
   commands:
+    - pip check
     - geovista --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/bjlittle/geovista
