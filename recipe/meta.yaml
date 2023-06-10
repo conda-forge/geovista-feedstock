@@ -10,7 +10,7 @@ source:
   sha256: 74391057e882f9dd2684ff623cdbfdb60d2b4978c0d6b1040943415fb3cf1d48
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -52,6 +52,10 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: Cartographic rendering and mesh analytics powered by PyVista.
+  description: |
+    GeoVista provides a cartographic gateway into the world of PyVista.
+    It leverages the power of your GPU through VTK to provide a paradigm
+    shift in rendering performance and interactive user experience.
   dev_url: https://github.com/bjlittle/geovista
   
 extra:
