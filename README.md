@@ -11,6 +11,11 @@ Summary: Cartographic rendering and mesh analytics powered by PyVista.
 
 Development: https://github.com/bjlittle/geovista
 
+GeoVista provides a cartographic gateway into the world of PyVista.
+It leverages the power of your GPU through VTK to provide a paradigm
+shift in rendering performance and interactive user experience.
+
+
 Current build status
 ====================
 
