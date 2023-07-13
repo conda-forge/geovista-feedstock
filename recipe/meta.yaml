@@ -10,7 +10,7 @@ source:
   sha256: dd6af86aa908b36fb9114a9558f439999fdd929a35df371266a31a452905b4d9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -36,11 +36,10 @@ requirements:
     - pykdtree
     - pyproj >=3.3
     - pyvista >=0.40
-    - vtk >=9.2.6
 
 test:
   imports:
-    - geovista 
+    - geovista
   commands:
     - pip check
     - geovista --help
@@ -59,7 +58,8 @@ about:
     It leverages the power of the GPU through VTK to provide a paradigm
     shift in rendering performance and interactive user experience.
   dev_url: https://github.com/bjlittle/geovista
-  
+
 extra:
   recipe-maintainers:
     - bjlittle
+    - banesullivan
