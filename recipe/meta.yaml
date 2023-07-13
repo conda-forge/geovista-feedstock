@@ -39,7 +39,7 @@ requirements:
 
 test:
   imports:
-    - geovista 
+    - geovista
   commands:
     - pip check
     - geovista --help
@@ -58,7 +58,8 @@ about:
     It leverages the power of the GPU through VTK to provide a paradigm
     shift in rendering performance and interactive user experience.
   dev_url: https://github.com/bjlittle/geovista
-  
+
 extra:
   recipe-maintainers:
     - bjlittle
+    - banesullivan
