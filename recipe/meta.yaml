@@ -1,5 +1,5 @@
 {% set name = "geovista" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bf9087fa5b1917c612d0d60cc3a6dbc6e5fa2ce106b3fe294fbdad0d2a2925b5
+  sha256: eb5813f1bc0c5f868e5234d7f83187bc5095900dca837d9163387f9fd50805ae
 
 build:
   number: 0
@@ -18,19 +18,20 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - pip
-    - setuptools >=61
-    - setuptools-scm >=7
+    - setuptools >=64
+    - setuptools-scm >=8
   run:
-    - python >=3.9
-    - cartopy >=0.20
+    - python >=3.10
+    - cartopy >=0.22
     - click
     - click-default-group
     - cmocean
     - colorcet
+    - lazy_loader
     - netcdf4
-    - numpy >=1.21
+    - numpy >=1.24
     - platformdirs
     - pooch
     - pykdtree
@@ -58,6 +59,7 @@ about:
     It leverages the power of the GPU through VTK to provide a paradigm
     shift in rendering performance and interactive user experience.
   dev_url: https://github.com/bjlittle/geovista
+  doc_url: https://geovista.readthedocs.io/en/stable/
 
 extra:
   recipe-maintainers:
