@@ -1,5 +1,5 @@
 {% set name = "geovista" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c4dcb031cee3af2fae22787b5cae93b3df137eda05ecdd48becfdca3317d021a
+  sha256: 15a200887766179b5d4ffacddc2c4247e9499fce79e38e604c59b7e6793190b8
 
 build:
   number: 0
