@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "geovista" %}
 {% set version = "0.5.3" %}
 
@@ -6,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 15a200887766179b5d4ffacddc2c4247e9499fce79e38e604c59b7e6793190b8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -18,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools >=64
     - setuptools-scm >=8
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - cartopy >=0.22
     - click
     - click-default-group
@@ -46,6 +47,7 @@ test:
     - geovista --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/bjlittle/geovista
